@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var vector_1 = require("./vector");
+var v1 = new vector_1.Vector(5, 10);
+var vAux = new vector_1.Vector(5, 10);
+console.log();
+vAux.print();
+v1.add(vAux);
+console.log();
+v1.print();
