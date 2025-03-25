@@ -21,6 +21,35 @@ var Point = /** @class */ (function () {
     Point.prototype.toString = function () {
         return "(".concat(this.x, ", ").concat(this.y, ")");
     };
+    Point.prototype.distanceToOrigin = function () {
+        return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+    };
+    Point.prototype.calculateDistance = function (anotherPoint) {
+        return Math.sqrt(Math.pow((this.x - anotherPoint.getX()), 2) + Math.pow((this.y - anotherPoint.getY()), 2));
+    };
+    Point.prototype.calculateQuadrant = function () {
+        if (this.x === 0 || this.y === 0)
+            return 0;
+        if (this.x > 0 && this.y > 0)
+            return 1;
+        if (this.x < 0 && this.y > 0)
+            return 2;
+        if (this.x < 0 && this.y < 0)
+            return 3;
+        return 4;
+    };
+    Point.prototype.calculateNearest = function (points) {
+        var nearestPoint = points[0];
+        var minDistance = this.calculateDistance(nearestPoint);
+        for (var i = 1; i < points.length; i++) {
+            var distance = this.calculateDistance(points[i]);
+            if (distance < minDistance) {
+                minDistance = distance;
+                nearestPoint = points[i];
+            }
+        }
+        return nearestPoint;
+    };
     return Point;
 }());
 exports.Point = Point;
