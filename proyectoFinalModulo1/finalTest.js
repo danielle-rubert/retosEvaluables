@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var readlineSync = require("readline-sync");
+var imdb_1 = require("./imdb");
+var professional_1 = require("./professional");
+var testMovie_1 = require("./testMovie");
+var imdbInicial = new imdb_1.Imdb([testMovie_1.movie1, testMovie_1.movie2, testMovie_1.movie3]);
+imdbInicial.escribirEnFicheroJSON("imdbBBDD.json");
+var imdb = imdb_1.Imdb.obtenerInstanciaIMDB("imdbBBDD.json");
+console.log("\nPelículas disponibles:");
+imdb.peliculas.forEach(function (peli, index) {
+    console.log("".concat(index, ": ").concat(peli.title));
+});
+var index = readlineSync.questionInt("\n¿A qué película querés añadir el profesional? Escribe el número: ");
+var pelicula = imdb.peliculas[index];
+console.log("\nIntroduce los datos del nuevo profesional:");
+var name = readlineSync.question("Nombre: ");
+var age = readlineSync.questionInt("Edad: ");
+var weight = readlineSync.questionFloat("Peso (kg): ");
+var height = readlineSync.questionFloat("Altura (cm): ");
+var isRetired = readlineSync.keyInYNStrict("¿Está retirado? ");
+var nationality = readlineSync.question("Nacionalidad: ");
+var oscarsNumber = readlineSync.questionInt("Número de Oscars: ");
+var profession = readlineSync.question("Profesión (Actor/Director/etc.): ");
+var nuevoProfesional = new professional_1.Professional(name, age, weight, height, isRetired, nationality, oscarsNumber, profession);

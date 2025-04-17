@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var professional_1 = require("./professional");
+var professional1 = new professional_1.Professional("Tilda Swinton", 63, 58, 1.79, false, "British", 1, "Actress");
+var professional2 = new professional_1.Professional("Emma Stone", 35, 53, 1.68, false, "American", 1, "Actress");
+var professional3 = new professional_1.Professional("Wes Anderson", 54, 72, 1.85, false, "American", 0, "Director");
+var professional4 = new professional_1.Professional("Noah Baumbach", 55, 70, 1.78, false, "American", 0, "Writer");
+var professional5 = new professional_1.Professional("Greta Gerwig", 40, 60, 1.73, false, "American", 0, "Director");
+var professional6 = new professional_1.Professional("Scott Derrickson", 57, 76, 1.82, false, "American", 0, "Director");
+var professional7 = new professional_1.Professional("Jon Spaihts", 54, 75, 1.80, false, "American", 0, "Writer");

@@ -1,0 +1,146 @@
+{
+  "peliculas": [
+    {
+      "actors": [
+        {
+          "name": "Tilda Swinton",
+          "age": 63,
+          "weight": 58,
+          "height": 1.79,
+          "isRetired": false,
+          "nationality": "British",
+          "oscarsNumber": 1,
+          "profession": "Actress"
+        },
+        {
+          "name": "Emma Stone",
+          "age": 35,
+          "weight": 53,
+          "height": 1.68,
+          "isRetired": false,
+          "nationality": "American",
+          "oscarsNumber": 1,
+          "profession": "Actress"
+        }
+      ],
+      "director": {
+        "name": "Wes Anderson",
+        "age": 54,
+        "weight": 72,
+        "height": 1.85,
+        "isRetired": false,
+        "nationality": "American",
+        "oscarsNumber": 0,
+        "profession": "Director"
+      },
+      "writer": {
+        "name": "Noah Baumbach",
+        "age": 55,
+        "weight": 70,
+        "height": 1.78,
+        "isRetired": false,
+        "nationality": "American",
+        "oscarsNumber": 0,
+        "profession": "Writer"
+      },
+      "language": "English",
+      "platform": "Disney+",
+      "isMCU": false,
+      "mainCharacterName": "Lucinda Krementz",
+      "producer": "Wes Anderson",
+      "distributor": "Searchlight Pictures",
+      "title": "The French Dispatch",
+      "releaseYear": 2021,
+      "nationality": "USA",
+      "genre": "Comedy/Drama"
+    },
+    {
+      "actors": [
+        {
+          "name": "Emma Stone",
+          "age": 35,
+          "weight": 53,
+          "height": 1.68,
+          "isRetired": false,
+          "nationality": "American",
+          "oscarsNumber": 1,
+          "profession": "Actress"
+        }
+      ],
+      "director": {
+        "name": "Greta Gerwig",
+        "age": 40,
+        "weight": 60,
+        "height": 1.73,
+        "isRetired": false,
+        "nationality": "American",
+        "oscarsNumber": 0,
+        "profession": "Director"
+      },
+      "writer": {
+        "name": "Noah Baumbach",
+        "age": 55,
+        "weight": 70,
+        "height": 1.78,
+        "isRetired": false,
+        "nationality": "American",
+        "oscarsNumber": 0,
+        "profession": "Writer"
+      },
+      "language": "English",
+      "platform": "HBO Max",
+      "isMCU": false,
+      "mainCharacterName": "Barbie",
+      "producer": "Margot Robbie",
+      "distributor": "Warner Bros",
+      "title": "Barbie",
+      "releaseYear": 2023,
+      "nationality": "USA",
+      "genre": "Fantasy/Comedy"
+    },
+    {
+      "actors": [
+        {
+          "name": "Tilda Swinton",
+          "age": 63,
+          "weight": 58,
+          "height": 1.79,
+          "isRetired": false,
+          "nationality": "British",
+          "oscarsNumber": 1,
+          "profession": "Actress"
+        }
+      ],
+      "director": {
+        "name": "Scott Derrickson",
+        "age": 57,
+        "weight": 76,
+        "height": 1.82,
+        "isRetired": false,
+        "nationality": "American",
+        "oscarsNumber": 0,
+        "profession": "Director"
+      },
+      "writer": {
+        "name": "Jon Spaihts",
+        "age": 54,
+        "weight": 75,
+        "height": 1.8,
+        "isRetired": false,
+        "nationality": "American",
+        "oscarsNumber": 0,
+        "profession": "Writer"
+      },
+      "language": "English",
+      "platform": "Disney+",
+      "isMCU": true,
+      "mainCharacterName": "Dr. Stephen Strange",
+      "producer": "Kevin Feige",
+      "distributor": "Marvel Studios",
+      "title": "Doctor Strange",
+      "releaseYear": 2016,
+      "nationality": "USA",
+      "genre": "Action/Fantasy"
+    }
+  ]
+}

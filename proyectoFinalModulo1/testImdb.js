@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var imdb_1 = require("./imdb");
+var testMovie_1 = require("./testMovie");
+var moviesArray = [testMovie_1.movie1, testMovie_1.movie2, testMovie_1.movie3];
+var imdb = new imdb_1.Imdb([testMovie_1.movie1, testMovie_1.movie2, testMovie_1.movie3]);
+console.log("\n=== Catálogo IMDb ===");
+imdb.printAllMovies();
+var peliculas = [testMovie_1.movie1, testMovie_1.movie2, testMovie_1.movie3];
+var myImdb = new imdb_1.Imdb(peliculas);
+myImdb.saveToJson("imdbBBDD.json");
+var imdbCargada = imdb_1.Imdb.loadFromJson("imdbBBDD.json");
+imdbCargada.printAllMovies();
