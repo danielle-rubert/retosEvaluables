@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .contenido {
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
+  .contenido img {
+    width: 800px;
+    height: auto;
+
+  }
+  .texto {
+    max-width: 500px;
+    justify-content: center;
+    text-align: center;
+  }
